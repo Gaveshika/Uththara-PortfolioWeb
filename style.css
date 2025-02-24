@@ -417,6 +417,7 @@ article .icon{
     background: rgb(250,250,250);
     margin: 2rem auto;
     padding: 0.5rem;
+   
 }
 
 .contact-info-container{
@@ -437,4 +438,26 @@ article .icon{
 
 .email-icon{
     height: 2.5rem;
+}
+
+.nav-links-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav1 {
+   
+    justify-content: center; /* Centers the nav-links-container */
+    align-items: center; /* Aligns items vertically */
+    
+}
+
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align:center;
 }
