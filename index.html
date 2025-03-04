@@ -91,7 +91,9 @@
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
-          <img src="./assets/about-pic.png" alt="About Picture" />
+          <!-- <img src="./assets/about-pic.png" alt="About Picture" /> -->
+          <img id="aboutPic" src="./assets/about-pic1.png" alt="About Picture" />
+
         </div>
         <div class="about-details-container">
           <div class="about-containers">
@@ -441,5 +443,21 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+      const images = [
+  "./assets/about-pic1.png",
+  "./assets/about-pic2.png",
+  "./assets/about-pic3.png",
+];
+
+let currentIndex = 0;
+const aboutPic = document.getElementById("aboutPic");
+
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % images.length; // Loop through images
+  aboutPic.src = images[currentIndex];
+}, 3000); // Change image every 3 seconds
+
+    </script>
   </body>
 </html>
